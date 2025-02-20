@@ -10,14 +10,14 @@ import org.junit.runner.RunWith;
 //        features = "src/test/resources/SampleFeature",
 //        glue = {"stepdef_apidemos","stepdef_hook" },
         features = "src/test/resources/ApiDemosAndroidApp",
-        glue = {"stepdef_apidemos" },
+        glue = {"stepdef_apidemos", "HooksImplementation"},
         monochrome = true,
-        dryRun= false,
+        dryRun = false,
         tags = "@testsanity",
-        plugin= {"pretty","html:HTMLReport.html"})
+        plugin = {"pretty", "html:HTMLReport.html"})
 public class TestRunner {
     @Before
-    public void start(){
+    public void start() {
 
     }
 
